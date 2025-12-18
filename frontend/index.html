@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActivePulse | Fitness Logger</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>ActivePulse ⚡</h1>
+            <p>Track your fitness, get AI insights.</p>
+        </header>
+
+        <div class="card input-section">
+            <h2>📝 Log Activity</h2>
+            <form id="fitnessForm">
+                <div class="form-group">
+                    <label>Activity Type</label>
+                    <select id="activity" required>
+                        <option value="Running">Running 🏃</option>
+                        <option value="Cycling">Cycling 🚴</option>
+                        <option value="Gym">Gym / Weights 🏋️</option>
+                        <option value="Yoga">Yoga 🧘</option>
+                        <option value="Walking">Walking 🚶</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>Duration (mins)</label>
+                        <input type="number" id="duration" placeholder="30" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Calories Burned</label>
+                        <input type="number" id="calories" placeholder="250" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Notes (Optional)</label>
+                    <input type="text" id="notes" placeholder="How did you feel?">
+                </div>
+
+                <button type="submit" class="btn-primary">Add Log</button>
+            </form>
+        </div>
+
+        <div class="card ai-section">
+            <div class="ai-header">
+                <h2>🧠 AI Health Assistant</h2>
+                <button onclick="fetchAIInsight()" class="btn-secondary">Generate Analysis</button>
+            </div>
+            <div id="aiResult" class="ai-result">
+                <p>Click the button to analyze your fitness patterns...</p>
+            </div>
+        </div>
+
+        <div class="card list-section">
+            <h2>📅 Recent History</h2>
+            <div id="activityList" class="activity-list">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
